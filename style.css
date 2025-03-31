@@ -1,0 +1,195 @@
+/* General styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: larger;
+    background: linear-gradient(135deg, #88d3ce, #6e45e2);
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Card design */
+.card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+    animation: fadeIn 0.5s ease;
+}
+
+/* Header */
+.header .logo {
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/* Contact buttons */
+button:hover{
+    transform: scale(1.25);
+
+}
+
+button {
+
+    padding: 20px 25px;
+    margin: 10px 15px;
+    border: none;
+    border-radius: 15px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: all 1.3s ease;
+}
+
+
+
+/* Left-align text below action buttons */
+.contact-info {
+    text-align: left;
+    margin-top: 20px;
+    padding: 0 10px; /* Add padding for better alignment */
+}
+
+.contact-info p {
+    margin: 5px 0;
+    line-height: 1.6;
+}
+
+.contact-buttons button {
+    background: #688bc0;
+    color: white;
+    border-radius: 50%;
+    gap: 50px;
+}
+
+.contact-buttons button img{
+    width: 30px;
+    height: 30px;
+    margin-bottom: 0px;
+}
+
+.contact-buttons button:hover {
+    background: #88d3ce;
+    
+}
+
+/* Action buttons */
+.action-buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.contact-btn {
+    background: #ffa726;
+    color: white;
+}
+
+.share-btn {
+    background: #5c6bc0;
+    color: white;
+}
+
+.contact-btn:hover, .share-btn:hover {
+    transform: scale(1.25);
+}
+
+
+
+/* Social media */
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.social-media a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #f1f1f1;
+    transition: transform 1.3s ease;
+}
+
+.social-media img {
+    width: 50px;
+    height: 50px;
+}
+
+.social-media a:hover {
+    transform: scale(1.2);
+}
+
+/* Share Options Popup */
+.share-options {
+    position:fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.share-options.active {
+    display: block;
+}
+
+.share-header {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.share-options button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #6c63ff;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.share-options button img {
+    width: 20px;
+    height: 20px;
+}
+
+.share-options button:hover {
+    background: #564fff;
+}
+
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
